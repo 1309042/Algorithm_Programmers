@@ -1,14 +1,16 @@
 def solution(s):
-    p갯수 = 0
-    y갯수 = 0
-
-    for i in s.lower():
-        if i == "p":
-            p갯수 += 1
-        elif i == "y":
-            y갯수 += 1
+    x_up = s.upper();
+    p = 0
+    y = 0
     
-    if p갯수 == y갯수:
-        return True   #주의! 파이썬은 대문자로 받음
+    for i in range(len(s)):
+        if x_up[i].find('P'):
+            p += 1
+            
+        if x_up[i].find('Y'):
+            y += 1    
+            
+    if p == y:
+        return True
     else:
         return False
