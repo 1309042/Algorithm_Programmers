@@ -1,2 +1,3 @@
 def solution(my_string, letter):
-    return my_string.replace(letter, "")
+    x = my_string.replace(letter, "")
+    return x
