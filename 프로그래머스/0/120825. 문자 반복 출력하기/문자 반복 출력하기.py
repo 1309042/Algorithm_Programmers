@@ -1,6 +1,8 @@
 def solution(my_string, n):
-    s = ""
-    for i in range(len(my_string)):
-        s += my_string[i]*n
-    return s
-        
+    x = list(my_string)
+    z = ""
+    
+    for i in range(len(x)):
+        z += x[i] * n 
+    
+    return z
